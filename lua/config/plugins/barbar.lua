@@ -8,7 +8,7 @@ return {
     init = function()
       local map = vim.keymap.set
       map('n', '<A-h>', '<cmd>BufferPrevious<CR>')
-      map('n', '<A-l>', '<cmd>BufferPrevious<CR>')
+      map('n', '<A-l>', '<cmd>BufferNext<CR>')
 
       -- Goto buffer in position...
       map('n', '<A-1>', '<Cmd>BufferGoto 1<CR>', opts)
