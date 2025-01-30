@@ -23,6 +23,7 @@ return {
       require('lspconfig').ols.setup {}
       require('lspconfig').v_analyzer.setup {}
       require('lspconfig').crystalline.setup {}
+      require('lspconfig').clangd.setup {}
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
