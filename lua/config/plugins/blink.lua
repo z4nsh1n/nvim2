@@ -37,11 +37,12 @@ return {
         cmdline = {},
       },
       completion = {
+        list = { selection = { preselect = false, auto_insert = true } },
         menu = {
           border = "rounded",
           draw = { columns = { { "label", "label_description", gap = 1 }, { "kind_icon", "kind" } } },
         },
-        documentation = { window = { border = "rounded" } }
+        documentation = { window = { border = "rounded" } },
       },
     },
   }
