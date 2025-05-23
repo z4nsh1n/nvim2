@@ -4,6 +4,7 @@ return {
     tag = '0.1.8',
     dependencies = {
       { 'nvim-lua/plenary.nvim' },
+      --      { 'LinArcX/telescope-changes.nvim' },
       { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' } },
     config = function()
       require('telescope').setup {
@@ -25,6 +26,8 @@ return {
         },
       }
       require("telescope").load_extension('fzf')
+      -- require('telescope').load_extension("changes")
+      require 'telescope'.load_extension('before')
 
       vim.keymap.set("n", "<space>fh", require('telescope.builtin').help_tags)
       vim.keymap.set("n", "<space>ff", require('telescope.builtin').find_files)

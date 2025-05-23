@@ -23,6 +23,11 @@ return {
       require('lspconfig').ols.setup {}
       require('lspconfig').clangd.setup {}
       require('lspconfig').v_analyzer.setup {}
+      require('lspconfig').nim_langserver.setup {}
+      require('lspconfig').marksman.setup { capabilities = capabilities }
+      require('lspconfig').unison.setup {}
+      require('lspconfig').hls.setup {}
+      require('lspconfig').gopls.setup {}
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
